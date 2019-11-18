@@ -30,6 +30,7 @@ it is simple, just use -h option to see help!
 Usage: probesFinder.py [options]
 
 Options:
+
   -h, --help            show this help message and exit
   
   -i INTERFACE, --interface=INTERFACE
