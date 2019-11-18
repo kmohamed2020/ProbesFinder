@@ -2,12 +2,15 @@
 This is a simple python tool to find all wireless clients probes and categorize it by ESSID, and it's relevant client probes associated with the MAC addresses of the clients and its vendors.
 
 Supported Python:
+
     only supports Python 3.
 
 Supported OS:
+
     It can work on any linux enviroment, but i do prefer Kali Linux, also it is tested on kali and works with no issue.
 
 Required Hardware:
+
     Any wireless card can support monitor mode, like below:
         - Alfa Cards.
         - TP-Link 722n V1, V1.1, V2.
@@ -16,10 +19,12 @@ Required Hardware:
         this tool is tested on the mentioned vendors.
 
 Installation:
+
     Just install the required packages by the below command:
             pip install -r requirements
 
 Usage:
+
 it is simple, just use -h option to see help!
 
 Usage: probesFinder.py [options]
