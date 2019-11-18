@@ -2,9 +2,9 @@
 
 import codecs
 import json
+import urllib.request as urllib2
 from optparse import OptionParser
 
-import urllib.request as urllib2
 from prettytable import PrettyTable
 from scapy.all import *
 from scapy.layers.dot11 import Dot11ProbeReq
