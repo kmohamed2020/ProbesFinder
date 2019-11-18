@@ -3,6 +3,7 @@
 import codecs
 import json
 from optparse import OptionParser
+
 import urllib.request as urllib2
 from prettytable import PrettyTable
 from scapy.all import *
@@ -22,7 +23,6 @@ class bcolors:
 
 debug = 0
 essidProbes = {}
-
 
 def findVendor(mac):
     # API base url,you can also use https if you need
