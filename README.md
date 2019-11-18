@@ -24,25 +24,19 @@ Installation:
             pip install -r requirements
 
 Usage:
-
 it is simple, just use -h option to see help!
 
-Usage: probesFinder.py [options]
+    Usage: probesFinder.py [options]
+    Options:
 
-Options:
-
-  -h, --help            show this help message and exit
-  
-  -i INTERFACE, --interface=INTERFACE
+    -h, --help            show this help message and exit
+    -i INTERFACE, --interface=INTERFACE
                         Wireless interface to be used, Must Support Packet
                         Monitoring. Default vlaue: wlan0
-                        
-  -q, --quiet           don't print status messages to stdout.
-  
-  -c COUNTER, --counter=COUNTER
+    -q, --quiet           don't print status messages to stdout.
+    -c COUNTER, --counter=COUNTER
                         Number of sniffed packets. Default value: 50K packets.
-                        
-  -t TIMEOUT, --timeout=TIMEOUT
+    -t TIMEOUT, --timeout=TIMEOUT
                         Time to sniff packets (in seconds). Default value: 30
                         seconds
 
