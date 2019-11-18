@@ -2,9 +2,9 @@
 
 import codecs
 import json
+import urllib.request as urllib2
 from optparse import OptionParser
 
-import urllib.request as urllib2
 from prettytable import PrettyTable
 from scapy.all import *
 from scapy.layers.dot11 import Dot11ProbeReq
@@ -129,12 +129,12 @@ def main():
                       action="store", dest="timeout", default=30, type="int")
 
     (options, args) = parser.parse_args()
-    count = int(sys.argv[2])
     if options.debug:
         debug = 2
 
     try:
-        sniffer(iface=options.interface, count=count, timeout=options.timeout, prn=PacketHandler, rangeStart=1,
+        sniffer(iface=options.interface, count=options.counter, timeout=options.timeout, prn=PacketHandler,
+                rangeStart=1,
                 rangeEnd=14)
         essidsTable = essidTableBuild(essidProbes, ['ESSID', 'client MAC', 'Vendor', 'Count'])
         print(essidsTable)
