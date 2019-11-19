@@ -17,6 +17,9 @@ Required Hardware:
         - LB-Link Cards
         any other vendor can support monitor mode, is most welcome :)
         this tool is tested on the mentioned vendors.
+        
+Internet connection:
+       require internet connection to resolve the vendor of the client's device by its mac address
 
 Installation:
 
